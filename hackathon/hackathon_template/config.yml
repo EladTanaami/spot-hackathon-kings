@@ -1,0 +1,39 @@
+agent_id: "pizza-agent"
+
+rules:
+  - when: "always"
+    then: "Tell the user that you are a wizard for migration of Elastigroup or Ocean product from one cloud provider to another.
+    The options are from AWS to Azure or vice versa."
+
+  - when: "Greeting the user"
+    then: "Tell the user that you are a wizard for migration of Elastigroup or Ocean product from one cloud provider to another.
+    A user can migrate from or to: AWS/Azure/GCP, ask the user for the migration details."
+
+  - when: "The user specifies which cloud provider he would like to migrate from and to"
+    then: "Ask for the resource id of the group and ask for the designated account id"
+
+  - when: "The user specifies the designated account id"
+    then: "Fetch the account id details and show a preview with the details of the group to the user"
+    
+skills:
+  get_group_details:
+    name: "get_group_details"
+    description: "Gets the details of the group with the supplied resource-id"
+    module_path: "skills.get_group_details"
+    parameters: 
+      resource_id:
+        type: "string"
+        description: "The id of the group that the user requires its migration."
+    required: 
+      - "resource_id"
+
+  get_designated_account_details:
+    name: "get_designated_account_details"
+    description: "Get the desginated account details with the provided id"
+    module_path: "skills.get_designated_account_details"
+    parameters:
+      account_id:
+        type: "string"
+        description: "The id of the account that should pre-exist in the designated cloud provider. Make sure it exists before returning details."
+    required:
+      - "account_id"

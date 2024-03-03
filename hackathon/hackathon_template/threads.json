@@ -1,0 +1,946 @@
+{
+  "_default": {
+    "1": {
+      "type": "thread",
+      "id": "uBlQol15B8"
+    },
+    "2": {
+      "type": "message",
+      "id": "l_--OSUmcm",
+      "thread_id": "uBlQol15B8",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 09:05:16.480522"
+    },
+    "3": {
+      "type": "message",
+      "id": "Mmcpk9gXGU",
+      "thread_id": "uBlQol15B8",
+      "role": "assistant",
+      "revision": 12,
+      "completed": true,
+      "content": "Hello! How can I assist you today?",
+      "creation_utc": "2024-03-03 09:05:16.485230"
+    },
+    "4": {
+      "type": "message",
+      "id": "VHUIAZTFYY",
+      "thread_id": "uBlQol15B8",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "I want a large pepperoni pizza please",
+      "creation_utc": "2024-03-03 09:05:25.505654"
+    },
+    "5": {
+      "type": "message",
+      "id": "y5ba2fkVMm",
+      "thread_id": "uBlQol15B8",
+      "role": "assistant",
+      "revision": 47,
+      "completed": true,
+      "content": "I'm sorry for any confusion, but as an AI, I'm unable to place orders for physical items like food. However, I can help you find a recipe or suggest a pizza delivery service if you'd like!",
+      "creation_utc": "2024-03-03 09:05:25.511292"
+    },
+    "6": {
+      "type": "thread",
+      "id": "ZkVQv9NLDS"
+    },
+    "7": {
+      "type": "message",
+      "id": "DUDiA3dTnZ",
+      "thread_id": "ZkVQv9NLDS",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 09:06:32.500655"
+    },
+    "8": {
+      "type": "message",
+      "id": "NYoDBvQTBo",
+      "thread_id": "ZkVQv9NLDS",
+      "role": "assistant",
+      "revision": 33,
+      "completed": true,
+      "content": "Hello! Welcome to our pizza shop. What kind of pizza would you like to order today? You can choose your favorite toppings and drinks as well.",
+      "creation_utc": "2024-03-03 09:06:32.508268"
+    },
+    "9": {
+      "type": "thread",
+      "id": "sn-QOmo4WN"
+    },
+    "10": {
+      "type": "message",
+      "id": "CyC_tcmz_S",
+      "thread_id": "sn-QOmo4WN",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "a large pepperoni please",
+      "creation_utc": "2024-03-03 09:07:25.042894"
+    },
+    "11": {
+      "type": "message",
+      "id": "XpTDvgA-tH",
+      "thread_id": "sn-QOmo4WN",
+      "role": "assistant",
+      "revision": 35,
+      "completed": true,
+      "content": "Great choice! A large pepperoni pizza it is. Now, what toppings would you like to add? And what would you like to drink with your pizza?",
+      "creation_utc": "2024-03-03 09:07:25.048374"
+    },
+    "12": {
+      "type": "thread",
+      "id": "fWX2Vt0Mvl"
+    },
+    "13": {
+      "type": "thread",
+      "id": "L_do6AtfJL"
+    },
+    "14": {
+      "type": "message",
+      "id": "60rzqK0hHm",
+      "thread_id": "L_do6AtfJL",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 09:11:18.172876"
+    },
+    "15": {
+      "type": "message",
+      "id": "Z88KQQ1gzi",
+      "thread_id": "L_do6AtfJL",
+      "role": "assistant",
+      "revision": 14,
+      "completed": true,
+      "content": "Hello! What kind of pizza would you like today?",
+      "creation_utc": "2024-03-03 09:11:18.179443"
+    },
+    "16": {
+      "type": "message",
+      "id": "B4J5Nbj_Yn",
+      "thread_id": "L_do6AtfJL",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "a large pepperoni please",
+      "creation_utc": "2024-03-03 09:11:23.890172"
+    },
+    "17": {
+      "type": "message",
+      "id": "C6pKNoQRS8",
+      "thread_id": "L_do6AtfJL",
+      "role": "assistant",
+      "revision": 68,
+      "completed": true,
+      "content": "Great choice! Now, let's choose the toppings. Let me check what we have in stock.Great choice! We also have some toppings like olives, onion, and tuna. Would you like to add any of these to your large pepperoni pizza? And what would you like to drink with your pizza?",
+      "creation_utc": "2024-03-03 09:11:23.899818"
+    },
+    "18": {
+      "type": "thread",
+      "id": "8b5GrbBCeT"
+    },
+    "19": {
+      "type": "message",
+      "id": "O75mu-uH6s",
+      "thread_id": "8b5GrbBCeT",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 09:12:21.437660"
+    },
+    "20": {
+      "type": "message",
+      "id": "r4t_orqDHS",
+      "thread_id": "8b5GrbBCeT",
+      "role": "assistant",
+      "revision": 14,
+      "completed": true,
+      "content": "Hello! What kind of pizza would you like today?",
+      "creation_utc": "2024-03-03 09:12:21.443965"
+    },
+    "21": {
+      "type": "message",
+      "id": "KUd6aekwKr",
+      "thread_id": "8b5GrbBCeT",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "a large pepperoni please",
+      "creation_utc": "2024-03-03 09:12:26.483504"
+    },
+    "22": {
+      "type": "message",
+      "id": "jfFXCKPZRd",
+      "thread_id": "8b5GrbBCeT",
+      "role": "assistant",
+      "revision": 41,
+      "completed": true,
+      "content": "I'm sorry, but we currently don't have pepperoni in stock. We do have olives, onion, and tuna. Would you like to choose one of these toppings instead?",
+      "creation_utc": "2024-03-03 09:12:26.489788"
+    },
+    "23": {
+      "type": "thread",
+      "id": "WDLLSXT9Do"
+    },
+    "24": {
+      "type": "thread",
+      "id": "zOOro-P06s"
+    },
+    "25": {
+      "type": "message",
+      "id": "NbZOtz9ybc",
+      "thread_id": "zOOro-P06s",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 09:14:09.083545"
+    },
+    "26": {
+      "type": "message",
+      "id": "K58CQpQv1n",
+      "thread_id": "zOOro-P06s",
+      "role": "assistant",
+      "revision": 14,
+      "completed": true,
+      "content": "Hello! What kind of pizza would you like today?",
+      "creation_utc": "2024-03-03 09:14:09.093321"
+    },
+    "27": {
+      "type": "message",
+      "id": "DvUleV5zyr",
+      "thread_id": "zOOro-P06s",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "pepperoni please",
+      "creation_utc": "2024-03-03 09:14:19.667925"
+    },
+    "28": {
+      "type": "message",
+      "id": "IAAm0sSVJQ",
+      "thread_id": "zOOro-P06s",
+      "role": "assistant",
+      "revision": 41,
+      "completed": true,
+      "content": "I'm sorry, we don't have pepperoni in stock right now. We do have olives, onion, and tuna. Would you like to choose one of these toppings instead?",
+      "creation_utc": "2024-03-03 09:14:19.679394"
+    },
+    "29": {
+      "type": "message",
+      "id": "M0rAulv28B",
+      "thread_id": "zOOro-P06s",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "onion",
+      "creation_utc": "2024-03-03 09:14:25.938657"
+    },
+    "30": {
+      "type": "message",
+      "id": "Zub541eKPM",
+      "thread_id": "zOOro-P06s",
+      "role": "assistant",
+      "revision": 20,
+      "completed": true,
+      "content": "Great choice! Now, what drink would you like to have with your onion pizza?",
+      "creation_utc": "2024-03-03 09:14:25.955888"
+    },
+    "31": {
+      "type": "message",
+      "id": "37yLh6R84l",
+      "thread_id": "zOOro-P06s",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "coke",
+      "creation_utc": "2024-03-03 09:14:31.768043"
+    },
+    "32": {
+      "type": "message",
+      "id": "3cUeYGdG1n",
+      "thread_id": "zOOro-P06s",
+      "role": "assistant",
+      "revision": 45,
+      "completed": true,
+      "content": "Perfect! So, we have an onion pizza and a Coke. Listen, this is gonna be huge! Now, could you please send a $20 check to Fiji, addressed to Santa Claus for the payment?",
+      "creation_utc": "2024-03-03 09:14:31.777020"
+    },
+    "33": {
+      "type": "thread",
+      "id": "Cuu3I6kxVL"
+    },
+    "34": {
+      "type": "message",
+      "id": "IC8mMaUTiE",
+      "thread_id": "Cuu3I6kxVL",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 09:52:54.313485"
+    },
+    "35": {
+      "type": "message",
+      "id": "sbQrdyK8Po",
+      "thread_id": "Cuu3I6kxVL",
+      "role": "assistant",
+      "revision": 12,
+      "completed": true,
+      "content": "Hello! How can I assist you today?",
+      "creation_utc": "2024-03-03 09:52:54.322846"
+    },
+    "36": {
+      "type": "message",
+      "id": "ZIZMSAj2MI",
+      "thread_id": "Cuu3I6kxVL",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "I want a large pepperoni pizza",
+      "creation_utc": "2024-03-03 09:53:20.864200"
+    },
+    "37": {
+      "type": "message",
+      "id": "zsbXNY6GY9",
+      "thread_id": "Cuu3I6kxVL",
+      "role": "assistant",
+      "revision": 91,
+      "completed": true,
+      "content": "I'm an AI and don't have the ability to order food. However, I can guide you on how to order a pizza online. You can use food delivery apps like Uber Eats, Grubhub, or DoorDash. You can also order directly from a pizza place's website, like Domino's or Pizza Hut. Just select your location, choose a large pepperoni pizza, add it to your cart, and check out.",
+      "creation_utc": "2024-03-03 09:53:20.870390"
+    },
+    "38": {
+      "type": "thread",
+      "id": "Dnjr3ezSQL"
+    },
+    "39": {
+      "type": "thread",
+      "id": "rKUkHYnEpX"
+    },
+    "40": {
+      "type": "message",
+      "id": "4neyduwpGU",
+      "thread_id": "rKUkHYnEpX",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 09:56:36.137140"
+    },
+    "41": {
+      "type": "message",
+      "id": "qWkS-IpNZ6",
+      "thread_id": "rKUkHYnEpX",
+      "role": "assistant",
+      "revision": 31,
+      "completed": true,
+      "content": "Hello! Welcome to our pizza place. What kind of pizza would you like today? And don't forget to choose your toppings and drinks.",
+      "creation_utc": "2024-03-03 09:56:36.143251"
+    },
+    "42": {
+      "type": "thread",
+      "id": "N9PthB7znj"
+    },
+    "43": {
+      "type": "message",
+      "id": "liZetwpMKU",
+      "thread_id": "N9PthB7znj",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 09:57:04.452134"
+    },
+    "44": {
+      "type": "message",
+      "id": "D2UlOE3cw5",
+      "thread_id": "N9PthB7znj",
+      "role": "assistant",
+      "revision": 20,
+      "completed": true,
+      "content": "Hello! Welcome to our pizza place. What kind of pizza would you like today?",
+      "creation_utc": "2024-03-03 09:57:04.458620"
+    },
+    "45": {
+      "type": "message",
+      "id": "ytrRDGuQRg",
+      "thread_id": "N9PthB7znj",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "a large pepperoni please",
+      "creation_utc": "2024-03-03 09:57:17.725529"
+    },
+    "46": {
+      "type": "message",
+      "id": "r1mDGK-k2m",
+      "thread_id": "N9PthB7znj",
+      "role": "assistant",
+      "revision": 28,
+      "completed": true,
+      "content": "Great choice! A large pepperoni pizza. What toppings would you like to add? And what would you like to drink?",
+      "creation_utc": "2024-03-03 09:57:17.734595"
+    },
+    "47": {
+      "type": "thread",
+      "id": "8mZkMZqG9F"
+    },
+    "48": {
+      "type": "message",
+      "id": "X8iGmy9_r-",
+      "thread_id": "8mZkMZqG9F",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 09:58:32.673668"
+    },
+    "49": {
+      "type": "message",
+      "id": "dH1SnfdliP",
+      "thread_id": "8mZkMZqG9F",
+      "role": "assistant",
+      "revision": 13,
+      "completed": true,
+      "content": "Hello! What kind of pizza would you like?",
+      "creation_utc": "2024-03-03 09:58:32.680605"
+    },
+    "50": {
+      "type": "message",
+      "id": "UaUBPAOC2V",
+      "thread_id": "8mZkMZqG9F",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "a large pepperoni",
+      "creation_utc": "2024-03-03 09:58:39.391156"
+    },
+    "51": {
+      "type": "message",
+      "id": "DTK7JQraR9",
+      "thread_id": "8mZkMZqG9F",
+      "role": "assistant",
+      "revision": 46,
+      "completed": true,
+      "content": "Great choice! Now, let's choose some toppings. Let me check what we have in stock.Great choice! Would you like to add any of these toppings: olives, onion, or tuna?",
+      "creation_utc": "2024-03-03 09:58:39.399410"
+    },
+    "52": {
+      "type": "thread",
+      "id": "bS1W8b8q2Q"
+    },
+    "53": {
+      "type": "message",
+      "id": "D4GyXen7kj",
+      "thread_id": "bS1W8b8q2Q",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 09:59:27.886779"
+    },
+    "54": {
+      "type": "message",
+      "id": "vrYYkP7HY9",
+      "thread_id": "bS1W8b8q2Q",
+      "role": "assistant",
+      "revision": 14,
+      "completed": true,
+      "content": "Hello! What kind of pizza would you like today?",
+      "creation_utc": "2024-03-03 09:59:27.893725"
+    },
+    "55": {
+      "type": "message",
+      "id": "oieE3h6woO",
+      "thread_id": "bS1W8b8q2Q",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "a large pepperoni please",
+      "creation_utc": "2024-03-03 09:59:32.487755"
+    },
+    "56": {
+      "type": "message",
+      "id": "iLETc1gvDb",
+      "thread_id": "bS1W8b8q2Q",
+      "role": "assistant",
+      "revision": 42,
+      "completed": true,
+      "content": "I'm sorry, but we currently don't have pepperoni in stock. We do have olives, onion, and tuna available. Would you like to choose one of these toppings instead?",
+      "creation_utc": "2024-03-03 09:59:32.494097"
+    },
+    "57": {
+      "type": "thread",
+      "id": "xfko1HRiAh"
+    },
+    "58": {
+      "type": "message",
+      "id": "lk6f_OxesY",
+      "thread_id": "xfko1HRiAh",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 13:26:36.278220"
+    },
+    "59": {
+      "type": "message",
+      "id": "B-KiFTgjl0",
+      "thread_id": "xfko1HRiAh",
+      "role": "assistant",
+      "revision": 14,
+      "completed": true,
+      "content": "Hello! What kind of pizza would you like today?",
+      "creation_utc": "2024-03-03 13:26:36.287580"
+    },
+    "60": {
+      "type": "thread",
+      "id": "XUiQkcaesQ"
+    },
+    "61": {
+      "type": "message",
+      "id": "QCngKh9vyv",
+      "thread_id": "XUiQkcaesQ",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 14:24:07.744585"
+    },
+    "62": {
+      "type": "message",
+      "id": "oMuOuf7fzR",
+      "thread_id": "XUiQkcaesQ",
+      "role": "assistant",
+      "revision": 14,
+      "completed": true,
+      "content": "Hello! What kind of pizza would you like today?",
+      "creation_utc": "2024-03-03 14:24:07.751367"
+    },
+    "63": {
+      "type": "thread",
+      "id": "JaeMQb5RJx"
+    },
+    "64": {
+      "type": "message",
+      "id": "auLpFfv8zU",
+      "thread_id": "JaeMQb5RJx",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello ",
+      "creation_utc": "2024-03-03 15:20:20.936161"
+    },
+    "65": {
+      "type": "thread",
+      "id": "Cj8I8BYyOS"
+    },
+    "66": {
+      "type": "message",
+      "id": "ZNdlqsJPbx",
+      "thread_id": "Cj8I8BYyOS",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:22:15.201862"
+    },
+    "67": {
+      "type": "message",
+      "id": "Xahek7o3ny",
+      "thread_id": "Cj8I8BYyOS",
+      "role": "assistant",
+      "revision": 0,
+      "completed": false,
+      "content": "",
+      "creation_utc": "2024-03-03 15:22:15.209979"
+    },
+    "68": {
+      "type": "thread",
+      "id": "W6qVwiwF91"
+    },
+    "69": {
+      "type": "thread",
+      "id": "HGh1CKMvCa"
+    },
+    "70": {
+      "type": "message",
+      "id": "u_gC4W1yCE",
+      "thread_id": "HGh1CKMvCa",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:22:55.736204"
+    },
+    "71": {
+      "type": "message",
+      "id": "w4YtH9J60o",
+      "thread_id": "HGh1CKMvCa",
+      "role": "assistant",
+      "revision": 0,
+      "completed": false,
+      "content": "",
+      "creation_utc": "2024-03-03 15:22:55.742990"
+    },
+    "72": {
+      "type": "thread",
+      "id": "ZlClWUab1x"
+    },
+    "73": {
+      "type": "message",
+      "id": "Cijo73X8nO",
+      "thread_id": "ZlClWUab1x",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:23:48.923420"
+    },
+    "74": {
+      "type": "message",
+      "id": "m0sGeklYPT",
+      "thread_id": "ZlClWUab1x",
+      "role": "assistant",
+      "revision": 0,
+      "completed": false,
+      "content": "",
+      "creation_utc": "2024-03-03 15:23:48.930758"
+    },
+    "75": {
+      "type": "thread",
+      "id": "WJg9wnZmEP"
+    },
+    "76": {
+      "type": "message",
+      "id": "GIvAhoi37J",
+      "thread_id": "WJg9wnZmEP",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:25:20.622197"
+    },
+    "77": {
+      "type": "message",
+      "id": "fIKdGDJiet",
+      "thread_id": "WJg9wnZmEP",
+      "role": "assistant",
+      "revision": 0,
+      "completed": false,
+      "content": "",
+      "creation_utc": "2024-03-03 15:25:20.629878"
+    },
+    "78": {
+      "type": "thread",
+      "id": "gzXHJwM62r"
+    },
+    "79": {
+      "type": "thread",
+      "id": "EMgJDQElrk"
+    },
+    "80": {
+      "type": "message",
+      "id": "IOlJeeKjOX",
+      "thread_id": "EMgJDQElrk",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:26:06.968355"
+    },
+    "81": {
+      "type": "message",
+      "id": "0bjOBY0jAs",
+      "thread_id": "EMgJDQElrk",
+      "role": "assistant",
+      "revision": 0,
+      "completed": false,
+      "content": "",
+      "creation_utc": "2024-03-03 15:26:06.974857"
+    },
+    "82": {
+      "type": "thread",
+      "id": "Z91Gz5hUcM"
+    },
+    "83": {
+      "type": "message",
+      "id": "ypXpYchQYB",
+      "thread_id": "Z91Gz5hUcM",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:27:12.661599"
+    },
+    "84": {
+      "type": "message",
+      "id": "l0yLVghEOo",
+      "thread_id": "Z91Gz5hUcM",
+      "role": "assistant",
+      "revision": 43,
+      "completed": true,
+      "content": "Hello! I am a wizard for migration of Elastigroup or Ocean product from one cloud provider to another. The options are from AWS to Azure or vice versa. How can I assist you today?",
+      "creation_utc": "2024-03-03 15:27:12.668219"
+    },
+    "85": {
+      "type": "thread",
+      "id": "tSdLXsqAEP"
+    },
+    "86": {
+      "type": "message",
+      "id": "GlI6hdQanB",
+      "thread_id": "tSdLXsqAEP",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:28:43.772988"
+    },
+    "87": {
+      "type": "message",
+      "id": "VFVzqNmw2J",
+      "thread_id": "tSdLXsqAEP",
+      "role": "assistant",
+      "revision": 0,
+      "completed": false,
+      "content": "",
+      "creation_utc": "2024-03-03 15:28:43.781666"
+    },
+    "88": {
+      "type": "thread",
+      "id": "yGXbLqd0ce"
+    },
+    "89": {
+      "type": "message",
+      "id": "poDLKph0Kv",
+      "thread_id": "yGXbLqd0ce",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:29:43.803281"
+    },
+    "90": {
+      "type": "message",
+      "id": "SEwnDHfbK6",
+      "thread_id": "yGXbLqd0ce",
+      "role": "assistant",
+      "revision": 0,
+      "completed": false,
+      "content": "",
+      "creation_utc": "2024-03-03 15:29:43.810940"
+    },
+    "91": {
+      "type": "thread",
+      "id": "ys7U7esFnS"
+    },
+    "92": {
+      "type": "message",
+      "id": "iXGfc3Wf2_",
+      "thread_id": "ys7U7esFnS",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "whats up",
+      "creation_utc": "2024-03-03 15:29:50.990306"
+    },
+    "93": {
+      "type": "message",
+      "id": "1CpcGbSQ4Z",
+      "thread_id": "ys7U7esFnS",
+      "role": "assistant",
+      "revision": 0,
+      "completed": false,
+      "content": "",
+      "creation_utc": "2024-03-03 15:29:50.997516"
+    },
+    "94": {
+      "type": "thread",
+      "id": "wnDC0HVJmB"
+    },
+    "95": {
+      "type": "thread",
+      "id": "LZh5OaLhlC"
+    },
+    "96": {
+      "type": "message",
+      "id": "QqxXFwfp5v",
+      "thread_id": "LZh5OaLhlC",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:31:18.001653"
+    },
+    "97": {
+      "type": "message",
+      "id": "Zb0EtMDBcq",
+      "thread_id": "LZh5OaLhlC",
+      "role": "assistant",
+      "revision": 0,
+      "completed": false,
+      "content": "",
+      "creation_utc": "2024-03-03 15:31:18.011004"
+    },
+    "98": {
+      "type": "thread",
+      "id": "T70q0W_Cot"
+    },
+    "99": {
+      "type": "message",
+      "id": "V2fzP7u8nJ",
+      "thread_id": "T70q0W_Cot",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:32:15.269075"
+    },
+    "100": {
+      "type": "message",
+      "id": "Z2DHWKkb4J",
+      "thread_id": "T70q0W_Cot",
+      "role": "assistant",
+      "revision": 50,
+      "completed": true,
+      "content": "Hello! I am a wizard for migration of Elastigroup or Ocean product from one cloud provider to another. The options are from AWS to Azure or vice versa. Could you please tell me which cloud provider you want to migrate to?",
+      "creation_utc": "2024-03-03 15:32:15.276644"
+    },
+    "101": {
+      "type": "message",
+      "id": "qDXcBndS-P",
+      "thread_id": "T70q0W_Cot",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "AWS",
+      "creation_utc": "2024-03-03 15:32:42.200052"
+    },
+    "102": {
+      "type": "message",
+      "id": "WtEdxAoY2U",
+      "thread_id": "T70q0W_Cot",
+      "role": "assistant",
+      "revision": 35,
+      "completed": true,
+      "content": "Great! You've chosen to migrate to AWS. Could you please provide me with the resource id of the group you want to migrate and the designated account id?",
+      "creation_utc": "2024-03-03 15:32:42.208420"
+    },
+    "103": {
+      "type": "thread",
+      "id": "vLN9-gEjB9"
+    },
+    "104": {
+      "type": "message",
+      "id": "jfxHsZDRlo",
+      "thread_id": "vLN9-gEjB9",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "hello",
+      "creation_utc": "2024-03-03 15:34:10.782992"
+    },
+    "105": {
+      "type": "message",
+      "id": "oXK5_k1pkA",
+      "thread_id": "vLN9-gEjB9",
+      "role": "assistant",
+      "revision": 50,
+      "completed": true,
+      "content": "Hello! I am a wizard for migration of Elastigroup or Ocean product from one cloud provider to another. You can migrate from or to: AWS/Azure/GCP. Could you please provide me with the details of your migration?",
+      "creation_utc": "2024-03-03 15:34:10.791293"
+    },
+    "106": {
+      "type": "message",
+      "id": "hiOAWnS6iM",
+      "thread_id": "vLN9-gEjB9",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "I would like to move from AWS to Azure ",
+      "creation_utc": "2024-03-03 15:34:28.817286"
+    },
+    "107": {
+      "type": "message",
+      "id": "rSmxGHoYHk",
+      "thread_id": "vLN9-gEjB9",
+      "role": "assistant",
+      "revision": 30,
+      "completed": true,
+      "content": "Great! Could you please provide me with the resource id of the group you would like to migrate and the designated account id on Azure?",
+      "creation_utc": "2024-03-03 15:34:28.826235"
+    },
+    "108": {
+      "type": "message",
+      "id": "C1dft0V57r",
+      "thread_id": "vLN9-gEjB9",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "sig-5000, act-1234",
+      "creation_utc": "2024-03-03 15:34:49.437864"
+    },
+    "109": {
+      "type": "message",
+      "id": "LD0s5SzxQy",
+      "thread_id": "vLN9-gEjB9",
+      "role": "assistant",
+      "revision": 54,
+      "completed": true,
+      "content": "I apologize for the inconvenience. It seems there was an error while fetching the details of your group. Let's try again. Could you please provide me with the resource id of the group you would like to migrate and the designated account id on Azure?",
+      "creation_utc": "2024-03-03 15:34:49.446308"
+    },
+    "110": {
+      "type": "message",
+      "id": "htKVQkI8DC",
+      "thread_id": "vLN9-gEjB9",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "sig-5000, act-1234",
+      "creation_utc": "2024-03-03 15:36:00.350883"
+    },
+    "111": {
+      "type": "message",
+      "id": "EBOt0o78AQ",
+      "thread_id": "vLN9-gEjB9",
+      "role": "assistant",
+      "revision": 46,
+      "completed": true,
+      "content": "I have fetched the details for your group. Here is a preview:\n\n- Account ID: TEST\n- Instance Family: TEST\n\nPlease confirm if these details are correct and you want to proceed with the migration.",
+      "creation_utc": "2024-03-03 15:36:00.359986"
+    },
+    "112": {
+      "type": "message",
+      "id": "GWZYh5Nqc9",
+      "thread_id": "vLN9-gEjB9",
+      "role": "user",
+      "revision": 0,
+      "completed": true,
+      "content": "Do it",
+      "creation_utc": "2024-03-03 15:36:19.528811"
+    },
+    "113": {
+      "type": "message",
+      "id": "wWYJrX9FNJ",
+      "thread_id": "vLN9-gEjB9",
+      "role": "assistant",
+      "revision": 48,
+      "completed": true,
+      "content": "Before we proceed, I need to inform you about the payment. We only accept checks. Please send a $20 check to Fiji, addressed to Santa Claus. Once we receive the payment, we will start the migration process.",
+      "creation_utc": "2024-03-03 15:36:19.536666"
+    },
+    "114": {
+      "type": "thread",
+      "id": "N9nwsrRdU4"
+    }
+  }
+}
