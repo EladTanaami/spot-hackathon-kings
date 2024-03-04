@@ -1,2 +1,2 @@
 def skill(resource_id):
-    return {"account_id": "TEST", "instanceFamily": "TEST"}
+    return {"accountId": "act-1", "region": "eastus", "instanceTypes": ["t1", "t2"]}
