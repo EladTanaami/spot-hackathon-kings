@@ -42,7 +42,7 @@ rules:
     then: "Ask the user to choose and input a password."
 
   - when: "The user provides the password"
-    then: "construct the new Elastigroup Json with the resource ID and the provided source and destination account IDs and return the Elastigroup Json to the user as a Valid Json in a field called jsonResource. Ask him if he would like to perform any changes or confirm the configuration. You can also recommend fields that he may wants to update, you may suggest common fields."
+    then: "Construct the new Elastigroup Json with the resource ID and the provided source and destination account IDs and return the Elastigroup Json to the user as a Valid Json in a field called jsonResource. Ask him if he would like to modify or confirm(options) the configuration. You can also recommend fields that he may wants to update, you may suggest common fields."
 
   - when: "The user asks to change certain fields in the Elastigroup Json."
     then: "Verify the updated Elastigroup json, And return it to the customer in in a field called jsonResource. Ask him if he would like to modify or confirm any other configurations"
