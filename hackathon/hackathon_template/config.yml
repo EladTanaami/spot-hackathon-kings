@@ -48,7 +48,7 @@ rules:
     then: "Verify the updated Elastigroup json, And return it to the customer in in a field called jsonResource. Ask him if he would like to modify or confirm any other configurations"
 
   - when: "The user confirms the Elastigroup details."
-    then: "Call migrate Elastigroup with the final Json and destination account ID. and return the new Elastigroup resource in a field called jsonResource."
+    then: "Call the create_azure_elastigroup_in_account skill."
 
 skills:
   get_group_details:
@@ -85,7 +85,7 @@ skills:
       - "account_id"
 
   create_azure_elastigroup_in_account:
-    name: "create_azure_elastigroup_aws_in_account"
+    name: "create_azure_elastigroup_in_account"
     description: "Create new elastigroup in azure inside the provided account id"
     module_path: "skills.create_azure_elastigroup_in_account"
     parameters:

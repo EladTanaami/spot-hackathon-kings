@@ -22,7 +22,6 @@ async def main(config):
     os.environ["AZURE_OPENAI_URL"] = "https://apim-dev-eastus-spotgenai.azure-api.net/Spot-Oren-Gurfinkel/openai"
     os.environ["AZURE_OPENAI_API_VERSION"] = "2024-02-15-preview"
     os.environ["DEFAULT_AGENT_MODEL"] = "azure/gpt-4"
-
     agent = Agent(
         id=AgentId(config["agent_id"]),
         model_id=ModelId(os.environ["DEFAULT_AGENT_MODEL"]),
@@ -36,6 +35,7 @@ async def main(config):
         rules=config["rules"],
     )
 
+    # add token in config.py to environment os
     app.add_middleware(
         CORSMiddleware,
         allow_origins=["*"],
