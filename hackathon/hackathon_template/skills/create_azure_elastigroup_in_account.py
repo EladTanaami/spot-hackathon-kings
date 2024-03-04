@@ -1,10 +1,12 @@
 """
 This skill creates an Azure Elastigroup in the specified account.
 """
-from hackathon.config import AUTH_TOKEN
 
+from loguru import logger
 
+# TODO ADD AUTH TOKEN MANUALLY
 def skill(account_id):
+    logger.info(f"creating group: {account_id}")
     # TODO send API request to elastigroup aws
     import requests
 
@@ -109,6 +111,5 @@ def skill(account_id):
             }
         }
     }
-
     response = requests.post(url, headers=headers, json=data)
     print(response.json())
