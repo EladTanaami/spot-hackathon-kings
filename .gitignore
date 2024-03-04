@@ -1,4 +1,13 @@
 /hackathon/__MACOSX/
 /hackathon/hackathon_template/config.pizza.yml
 /hackathon/emcie_server-0.1.0-py3-none-any.whl
-/hackathon/hackathon_template.zip
+/hackathon/hackathon_template.
+/hackathon/config.py
+/.gitignore
+/hackathon/hackathon_template/config.pizza.yml
+/hackathon/hackathon_template/pyproject.toml
+/hackathon/hackathon_template/poetry.lock
+/hackathon/hackathon_template/threads.json
+/hackathon/hackathon_template/skills/get_drinks.py
+/hackathon/hackathon_template/skills/get_toppings.py
+/hackathon/__MACOSX
