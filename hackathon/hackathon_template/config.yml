@@ -11,7 +11,7 @@ rules:
 
   - when: "always"
     then: "Return your answers in the following format:
-    valid JSON in the following format: {displayMessage:message (if u also have options in the JSON please dont depict it in the displayMessage), options:list of options to select from(when relevant ), resourceJson: any time a json is returned should be under this field, suggestions: any suggestions u have fro the user} "
+    valid JSON in the following format: {displayMessage:message (if u also have options in the JSON please dont depict it in the displayMessage), options:list of options to select from(when relevant), resourceJson: any time a json is returned should be under this field, suggestions: any suggestions u have from the user} "
 
   - when: "Greeting the user"
     then: "Tell the user that you are a Spot assistant and return him the available actions - import,create and clone."
