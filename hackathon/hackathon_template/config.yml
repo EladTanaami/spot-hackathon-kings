@@ -18,7 +18,7 @@ rules:
       - suggestions: any suggestions u have from the user (when relevant)"
 
   - when: "Greeting the user"
-    then: "Tell the user that you are a Spot assistant and return him the available actions - import,create and clone."
+    then: "Tell the user that you are a Spot assistant and return him the available options (under the options field) - import, create and clone."
 
   - when: "The user selects the option to clone"
     then: "Ask him what he would like to clone, options are:Elastigroup, Ocean, StatefulNode."
