@@ -14,20 +14,21 @@ rules:
     valid JSON that includes the following fields:
       - displayMessage: message (if u also have options in the JSON please dont depict it in the displayMessage)
       - options: list of options the user can select from (Important - When the customer is facing a choice always return the list of options under this field and this field alone but if the list is empty do not return the options)
-      - resourceJson: any time a json is returned should be under this field (when relevant)
-      - suggestions: any suggestions u have from the user (when relevant)"
+      - resourceJson: Only return the json when explicitly requested to return it(expected only for elastigroup configurations),  when returned should be under this field (when relevant)
+      - suggestions: any suggestions u have from the user (when relevant)
+      - migrationFinished: boolean field default false unless explicitly said otherwise"
 
   - when: "Greeting the user"
-    then: "Tell the user that you are a Spot assistant and return the available actions under the options field in the JSON response (do not include the actions in the display message only under the options field) - import, create, 'clone to any cloud provider' and 'upgrade Elastigroup to Ocean'."
+    then: "Tell the user that you are a Spot assistant and return the available actions under the options field in the JSON response (do not include the actions in the display message only under the options field) - Import, Create, 'Clone to any Cloud Provider' and 'Upgrade Elastigroup to Ocean'."
 
   - when: "The user selects the option to clone"
-    then: "Great let's workload it out!. Ask him what he would like to clone, options are:Elastigroup, Ocean, StatefulNode."
+    then: "Great let's workload it out!. Ask him what he would like to clone, options are:Elastigroup, Ocean, Stateful Node."
 
   - when: "The user selects the option to clone an Elastigroup"
     then: "Ask him from which Spot account ID he would like to clone."
 
   - when: "The user inputs the Spot account ID he would like to clone from."
-    then: "Get the source designated account details and resolve the cloud_provider(AWS, Azure etc). Ask him what is resource ID he would like to clone (resource ID according to his previous product selection(e.g if he choose Elastigroup the ask him what is the Elastigroup ID)."
+    then: "Get the source designated account details and resolve the cloud_provider(under the 'type' field) remmember that this is the source cloud provider and use it when conversing with the user. Ask him what is resource ID he would like to clone (resource ID according to his previous product selection(e.g if he choose Elastigroup the ask him what is the Elastigroup ID)."
 
   - when: "The user inputs the resource ID he would like to clone from."
     then: "Call get group details with the acoount id and the resource id and return the group json. Tell the user that now we need the cloned resource destination details. Ask the customer for the destination account ID."
@@ -42,16 +43,17 @@ rules:
     then: "Ask the user to choose and input a password."
 
   - when: "The user provides the password"
-    then: "Construct the new Elastigroup Json with the resource ID and the provided source and destination account IDs and return the Elastigroup Json to the user as a Valid Json in a field called jsonResource. Ask him if he would like to modify or confirm(options) the configuration. You can also recommend fields that he may wants to update, you may suggest common fields."
+    then: "call the convert group skill with the aws group json and the provided destination account ID and the selected user name and password and return the converted Elastigroup Json to the user as a Valid Json in a field called jsonResource. Ask him if he would like to modify or confirm(options) the configuration. You can also recommend fields that he may wants to update, you may suggest common fields."
 
   - when: "The user asks to change certain fields in the Elastigroup Json."
-    then: "Verify the updated Elastigroup json, And return it to the customer in in a field called jsonResource. Ask him if he would like to modify or confirm any other configurations"
+    then: "Change the specific fields the user requested to change in the json and return it to the customer in a field called jsonResource. Do not use the convert group skill but rather replace it yourself in the designated target field Ask him if he would like to modify or confirm any other configurations"
 
-  - when: "the user asks for Elastigroup configuration option for Azure Elastigroup."
+  - when: "The user asks you to suggest Elastigroup configuration options for Azure Elastigroup."
     then: "Call the get create group yamls with Azure as parameter to understand the basic fields and structure of an Elastigroup. Provider the customer with some selected options he may configure."
 
   - when: "The user confirms the Elastigroup details."
-    then: "Call create Elastigroup with the final Json and destination account ID. and return the new Elastigroup resource in a field called jsonResource."
+    then: "Call create Azure Elastigroup skill with the final group Json(the group json should be wrapped with 'group' field) and destination account_id.
+     Upon success creation set the migrationFinished field to true and return the new Elastigroup result in the jsonResource field."
 
 skills:
   get_group_details:
@@ -59,12 +61,16 @@ skills:
     description: "Gets the details of the group with the supplied resource-id"
     module_path: "skills.get_group_details"
     parameters:
-      resource_id:
+      group_id:
         type: "string"
         description: "The id of the group that the user requires its migration."
+      account_id:
+        type: "string"
+        description: "The id of the account that should pre-exist in the designated cloud provider. Make sure it exists before returning details."
     required:
-      - "resource_id"
+      - "group_id"
       - "account_id"
+
   get_create_group_yml:
     name: "get_create_group_yaml"
     description: "Gets the create API doc yamls details of the AWS and Azure groups."
@@ -88,13 +94,36 @@ skills:
     required:
       - "account_id"
 
-  create_azure_elastigroup_in_account:
-    name: "create_azure_elastigroup_in_account"
+  create_azure_elastigroup:
+    name: "create_azure_elastigroup"
     description: "Create new elastigroup in azure inside the provided account id"
-    module_path: "skills.create_azure_elastigroup_in_account"
+    module_path: "skills.create_azure_elastigroup"
     parameters:
       account_id:
         type: "string"
         description: "The id of the account that should pre-exist in the designated cloud provider. Make sure it exists before returning details."
+      group:
+        type: "string"
+        description: "The json representing the Elastigroup to create. Make sure it exists before returning details."
     required:
       - "account_id"
+      - "group"
+
+  convert_group:
+    name: "convert_group"
+    description: "Converts the Azure elastigroup to AWS Elastigroup"
+    module_path: "skills.convert_group"
+    parameters:
+      aws_group:
+        type: "string"
+        description: "The AWS group to convert to Azure group."
+      password:
+        type: "string"
+        description: "The password login information."
+      userName:
+        type: "string"
+        description: "The user name login information."
+    required:
+      - "aws_group"
+      - "password"
+      - "userName"
