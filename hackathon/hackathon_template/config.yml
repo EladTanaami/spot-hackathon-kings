@@ -74,8 +74,20 @@ skills:
 
   get_designated_account_details:
     name: "get_designated_account_details"
-    description: "Get the desginated account details with the provided id"
+    description: "Get the designated account details with the provided id, result will be a json containing 
+    the details of the account."
     module_path: "skills.get_designated_account_details"
+    parameters:
+      account_id:
+        type: "string"
+        description: "The id of the account that should pre-exist in the designated cloud provider. Make sure it exists before returning details."
+    required:
+      - "account_id"
+
+  create_azure_elastigroup_in_account:
+    name: "create_azure_elastigroup_aws_in_account"
+    description: "Create new elastigroup in azure inside the provided account id"
+    module_path: "skills.create_azure_elastigroup_in_account"
     parameters:
       account_id:
         type: "string"
