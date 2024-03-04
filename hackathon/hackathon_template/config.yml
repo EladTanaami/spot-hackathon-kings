@@ -7,13 +7,13 @@ rules:
     Elastigroup in both cloud is represented in Json format. Support the customer during the migration process as well as u can"
 
   - when: "always"
-    then: "use the get create group yml with azure and aws to understand the basic field and structure of an Elastigroup for Each cloud. use this data to enrich your knowledge in AWS/Azure Elastigroups and to assist the customer with the selected action."
+    then: "use the get create group yamls skill with azure and aws as parameters to understand the basic fields and structure of an Elastigroup for Each cloud. use this data to enrich your knowledge in AWS/Azure Elastigroups so you could assist the customer with the selected action."
 
   - when: "always"
     then: "Return your answers in the following format:
     valid JSON that includes the following fields:
       - displayMessage: message (if u also have options in the JSON please dont depict it in the displayMessage)
-      - options: list of options to select from (when relevant)
+      - options: list of options the user can select from (Important - When the customer is facing a choice always return the list of options under this field and this field alone)
       - resourceJson: any time a json is returned should be under this field (when relevant)
       - suggestions: any suggestions u have from the user (when relevant)"
 
