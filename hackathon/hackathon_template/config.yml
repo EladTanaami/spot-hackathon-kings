@@ -15,7 +15,6 @@ rules:
       - displayMessage: message (if u also have options in the JSON please dont depict it in the displayMessage)
       - options: list of options the user can select from (Important - When the customer is facing a choice always return the list of options under this field and this field alone but if the list is empty do not return the options)
       - resourceJson: Only return the json when explicitly requested to return it(expected only for elastigroup configurations),  when returned should be under this field (when relevant)
-      - suggestions: any suggestions u have from the user (when relevant)
       - migrationFinished: boolean field default false unless explicitly said otherwise"
 
   - when: "Greeting the user"
@@ -53,7 +52,7 @@ rules:
 
   - when: "The user confirms the Elastigroup details."
     then: "Call create Azure Elastigroup skill with the final group Json and destination account_id.
-     Upon success creation set the migrationFinished field to true and return the new Elastigroup result in the jsonResource field."
+     Upon success creation set the migrationFinished field to true and return the new Elastigroup result in the jsonResource field. Ask the customer if he would like to perform another action and include the options under the options field"
 
 skills:
   get_group_details:
