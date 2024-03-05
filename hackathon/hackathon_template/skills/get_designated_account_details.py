@@ -11,7 +11,7 @@ def skill(account_id):
     url = 'http://localhost:7900/azure/compute/group/accountProvider'
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzcG90aW5zdCIsImV4cCI6MTg5NDYxMjE5OSwiaWF0IjoxNTc5MjUyMTk5LCJ1aWQiOi0xLCJyb2xlIjoyLCJvaWQiOiI2MDYwNzk4NjU5MjEifQ.l5fjLRh3jsyzCDtlvUG3NozaDWEDjlRNH9jKoJU8hYc"
+        'Authorization': "TOKEN"
     }
     logger.info(f"Getting account details for account_id: {account_id}")
   #  response = requests.get(url, headers=headers, params=params)

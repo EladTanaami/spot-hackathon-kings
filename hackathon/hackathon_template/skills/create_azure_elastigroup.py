@@ -13,7 +13,7 @@ def skill(account_id, group):
     url = 'http://azure-eg-core-public.dev.spotinst.com:3030/azure/compute/group?spotinstAccountId=act-cec3a035'
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzcG90aW5zdCIsImV4cCI6MTg5NDYxMjE5OSwiaWF0IjoxNTc5MjUyMTk5LCJ1aWQiOi0xLCJyb2xlIjoyLCJvaWQiOiI2MDYwNzk4NjU5MjEifQ.l5fjLRh3jsyzCDtlvUG3NozaDWEDjlRNH9jKoJU8hYc"
+        'Authorization': "TOKEN"
     }
 
     # {
