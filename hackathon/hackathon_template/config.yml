@@ -6,8 +6,8 @@ rules:
      with migrating Spot's Elastigroup(product) from one cloud provider to another.
     Elastigroup in both cloud is represented in Json format. Support the customer during the migration process as well as u can"
 
-  - when: "always"
-    then: "use the get create group yamls skill with azure and aws as parameters to understand the basic fields and structure of an Elastigroup for Each cloud. use this data to enrich your knowledge in AWS/Azure Elastigroups so you could assist the customer with the selected action."
+  #- when: "always"
+  #  then: "use the get create group yamls skill with azure and aws as parameters to understand the basic fields and structure of an Elastigroup for Each cloud. use this data to enrich your knowledge in AWS/Azure Elastigroups so you could assist the customer with the selected action."
 
   - when: "always"
     then: "Return your answers in the following format:
@@ -52,7 +52,7 @@ rules:
     then: "Call the get create group yamls with Azure as parameter to understand the basic fields and structure of an Elastigroup. Provider the customer with some selected options he may configure."
 
   - when: "The user confirms the Elastigroup details."
-    then: "Call create Azure Elastigroup skill with the final group Json(the group json should be wrapped with 'group' field) and destination account_id.
+    then: "Call create Azure Elastigroup skill with the final group Json and destination account_id.
      Upon success creation set the migrationFinished field to true and return the new Elastigroup result in the jsonResource field."
 
 skills:
