@@ -10,12 +10,19 @@ def skill(account_id, group):
     logger.info(f"creating group: {group}")
     import requests
 
-    url = 'http://azure-eg-core-public.dev.spotinst.com:3030/azure/compute/group?spotinstAccountId=act-cec3a035'
+    url = f'http://azure-eg-core-public.dev.spotinst.com:3030/azure/compute/group?spotinstAccountId={account_id}'
     headers = {
         'Content-Type': 'application/json',
         'Authorization': "TOKEN"
     }
 
+    # Parse the JSON string to ensure it's valid JSON
+    parsed_json = json.loads(group)
+    # Convert the parsed JSON back to a string with curly braces
+    response = requests.post(url, headers=headers, json=parsed_json)
+    print(response)
+
+    return response.json()
     # {
     #     "group": {
     #         "name": "elad-attributes-test1",
@@ -111,13 +118,3 @@ def skill(account_id, group):
     #         }
     #     }
     # }
-
-    # Parse the JSON string to ensure it's valid JSON
-    parsed_json = json.loads(group)
-    # Convert the parsed JSON back to a string with curly braces
-    wrapped_json_string = "{" + "group" + ":" + json.dumps(parsed_json) + "}"
-    print(wrapped_json_string)
-    response = requests.post(url, headers=headers, json=parsed_json)
-    print(response)
-
-    return response.json()

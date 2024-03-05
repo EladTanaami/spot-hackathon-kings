@@ -16,9 +16,20 @@ def skill(account_id):
     logger.info(f"Getting account details for account_id: {account_id}")
   #  response = requests.get(url, headers=headers, params=params)
    # print(response.json())
-    return {
-                "accountId": "act-ef5a3926",
+
+    if account_id == "act-ef5a3926":
+        return {
+                    "accountId": "act-ef5a3926",
+                    "organizationId": 606079865921,
+                    "type": "AWS",
+                    "status": "valid"
+                }
+    else:
+        return {
+            {
+                "accountId": "act-cec3a035",
                 "organizationId": 606079865921,
-                "type": "AWS",
+                "type": "Azure",
                 "status": "valid"
             }
+    }
